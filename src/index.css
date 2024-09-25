@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* dark mode looking scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #121212;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}
+body {
+  overflow-x: hidden;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.main-font {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 2px;
+}
+
+.cursive-font {
+  font-family: "Oleo Script", system-ui;
+}
+
+.normal-font {
+  font-family: "Port Lligat Slab", serif;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: 0.3s ease-in-out all;
+}
+.landing-height {
+  min-height: calc(100vh - 96px);
+}

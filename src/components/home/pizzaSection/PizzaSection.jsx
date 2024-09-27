@@ -5,14 +5,14 @@ import PizzaCarousel from "./PizzaCarousel";
 export default function PizzaSection() {
   return (
     <div
-      className="px-20 py-10 bg-cover"
+      className="md:px-20 px-5 py-10 bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="flex flex-col gap-5 justify-center items-center my-20">
-        <h2 className="text-white text-6xl main-font font-bold">
+        <h2 className="text-white text-6xl main-font font-bold text-center">
           WELCOME TO PIZZA CLUB!
         </h2>
-        <h3 className="text-3xl text-yellowColor cursive-font">
+        <h3 className="text-3xl text-yellowColor cursive-font text-center">
           Family Cafe & Pizzeria
         </h3>
         <p className="max-w-[600px] text-white normal-font text-center">

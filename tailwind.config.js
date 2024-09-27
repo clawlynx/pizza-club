@@ -7,6 +7,8 @@ export default {
         partialColor: "#212121",
         yellowColor: "#d6e664",
         orangeColor: "#e44c37",
+        saffronColor: "#df6a3b",
+        mangoColor: "#feba11",
       },
       keyframes: {
         slideInLeft: {

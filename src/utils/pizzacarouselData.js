@@ -1,8 +1,7 @@
 export const pizzaCarouselData = [
-  { id: 1, img: "/fire-breather.jpg", content: "Fire Breather" },
+  { id: 1, img: "/american.jpg", content: "American" },
   { id: 2, img: "/margherita.jpg", content: "Margherita" },
-  { id: 3, img: "/pepperoni.jpg", content: "Pepperoni" },
-  { id: 4, img: "/simply-cheese.jpg", content: "Simply Cheese" },
-  { id: 5, img: "/Spicy-veg-trio.jpg", content: "Spicy Veg Trio" },
-  { id: 6, img: "/tandoori-chicken.jpg", content: "Tandoori Chicken" },
+  { id: 3, img: "/cheese-lovers.jpg", content: "Cheese-Lovers" },
+  { id: 4, img: "/ham-special.jpg", content: "Ham Special" },
+  { id: 5, img: "/mexican-hot.jpg", content: "Mexican Hot" },
 ];

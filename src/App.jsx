@@ -3,6 +3,7 @@ import "./App.css";
 import HomeLayout from "./pages/HomeLayout";
 import ErrorPage from "./pages/errorPages/ErrorPage";
 import HomePage from "./pages/home/HomePage";
+import MenuPage from "./pages/menu/MenuPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -10,7 +11,10 @@ function App() {
       path: "/",
       element: <HomeLayout />,
       errorElement: <ErrorPage />,
-      children: [{ index: true, element: <HomePage /> }],
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "menu", element: <MenuPage /> },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;

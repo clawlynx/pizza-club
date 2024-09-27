@@ -26,17 +26,19 @@ const footerDetails = [
 
 export default function Footer() {
   return (
-    <div className="bg-partialColor px-20 py-5">
+    <div className="bg-partialColor px-5 md:px-20 py-5">
       <div
-        className=" flex justify-between items-center
+        className=" flex md:flex-row flex-col gap-5 justify-between md:items-center
     "
       >
         <div className="flex flex-col gap-5">
-          <img
-            src="/logo.png"
-            alt="pizza club logo"
-            className="w-28 h-32"
-          ></img>
+          <div className="flex gap-2 items-center">
+            <img
+              src="/logo.png"
+              alt="pizza club logo"
+              className="md:w-28 md:h-32 w-20 h-24"
+            ></img>
+          </div>
           <div className="flex gap-3">
             {icons.map((x) => (
               <FooterLinks key={x} icon={x} />
@@ -50,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="h-[1px] bg-gray-500 my-5"></div>
-      <p className="normal-font text-white text-center">
+      <p className="normal-font text-white md:text-base text-xs text-center">
         © 2024 / All Rights Reserved
       </p>
     </div>

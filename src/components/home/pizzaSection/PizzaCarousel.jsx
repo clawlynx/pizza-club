@@ -14,6 +14,22 @@ export default function PizzaCarousel() {
     autoplaySpeed: 2000, // Autoplay interval (2 seconds)
     nextArrow: <SampleNextArrow />, // Custom next arrow
     prevArrow: <SamplePrevArrow />, // Custom previous arrow
+    responsive: [
+      {
+        breakpoint: 1024, // Screens less than 1024px
+        settings: {
+          slidesToShow: 2, // Show 2 slides
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Screens less than 768px
+        settings: {
+          slidesToShow: 1, // Show 1 slide
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="w-full flex justify-center">

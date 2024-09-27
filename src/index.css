@@ -45,3 +45,7 @@ body {
 .landing-height {
   min-height: calc(100vh - 96px);
 }
+
+.active {
+  color: #d6e664;
+}

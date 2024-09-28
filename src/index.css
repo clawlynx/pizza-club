@@ -21,8 +21,8 @@
 }
 body {
   overflow-x: hidden;
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .main-font {
@@ -48,4 +48,8 @@ body {
 
 .active {
   color: #d6e664;
+}
+
+.white {
+  color: white;
 }

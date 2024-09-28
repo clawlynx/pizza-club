@@ -7,7 +7,7 @@ import landing3 from "../../assets/landingp.png";
 export default function MenuLanding() {
   return (
     <div
-      className="bg-cover md:px-120 px-5 py-10 landing-height bg-center md:bg-top"
+      className="bg-cover md:px-120 px-5 py-10 landing-height flex justify-center items-center bg-bottom md:bg-top"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>

@@ -14,6 +14,7 @@ export default function SmallHeader({ showSmallbar, setShowSmallBar }) {
       </div>
       <div className="flex flex-col gap-5">
         <NavLink
+          to={"/"}
           className={
             "text-white text-xl hover:text-yellowColor nav-link border-b border-gray-600 py-5"
           }
@@ -25,6 +26,7 @@ export default function SmallHeader({ showSmallbar, setShowSmallBar }) {
           className={
             "text-white text-xl hover:text-yellowColor nav-link  border-b border-gray-600 pb-5"
           }
+          to={"/menu"}
           onClick={() => setShowSmallBar(!showSmallbar)}
         >
           MENU

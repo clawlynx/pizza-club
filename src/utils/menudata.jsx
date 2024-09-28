@@ -15,6 +15,8 @@ export const menuHeadings = [
     color: "text-orangeColor",
     hover: "hover:border-orangeColor",
     border: "border-orangeColor",
+    shadow: "shadow-orangeColor",
+    bg: "bg-orangeColor",
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ export const menuHeadings = [
     color: "text-saffronColor",
     hover: "hover:border-saffronColor",
     border: "border-saffronColor",
+    shadow: "shadow-saffronColor",
+    bg: "bg-saffronColor",
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ export const menuHeadings = [
     color: "text-mangoColor",
     hover: "hover:border-mangoColor",
     border: "border-mangoColor",
+    shadow: "shadow-mangoColor",
+    bg: "bg-mangoColor",
   },
   {
     id: 4,
@@ -39,6 +45,8 @@ export const menuHeadings = [
     color: "text-yellowColor",
     hover: "hover:border-yellowColor",
     border: "border-yellowColor",
+    shadow: "shadow-yellowColor",
+    bg: "bg-yellowColor",
   },
 ];
 

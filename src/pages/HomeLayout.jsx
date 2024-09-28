@@ -8,8 +8,8 @@ import SmallHeader from "../components/SmallHeader";
 export default function HomeLayout() {
   const [showSmallBar, setShowSmallBar] = useState(false);
   return (
-    <div>
-      <div className="relative">
+    <div className="mx-0 overflow-x-hidden">
+      <div className="">
         <Header showSmallBar={showSmallBar} setShowSmallBar={setShowSmallBar} />
         {showSmallBar && (
           <SmallHeader

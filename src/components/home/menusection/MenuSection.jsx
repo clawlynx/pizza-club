@@ -35,6 +35,8 @@ export default function MenuSection() {
             active={active}
             setActive={setActive}
             border={x.border}
+            shadow={x.shadow}
+            bg={x.bg}
           />
         ))}
       </div>

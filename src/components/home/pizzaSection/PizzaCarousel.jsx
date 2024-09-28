@@ -32,8 +32,8 @@ export default function PizzaCarousel() {
     ],
   };
   return (
-    <div className="w-full flex justify-center">
-      <Slider {...settings} className="w-full ">
+    <div className="">
+      <Slider {...settings} className=" ">
         {pizzaCarouselData.map((x, index) => (
           <PizzaCard key={index} img={x.img} content={x.content} />
         ))}
@@ -47,7 +47,12 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "black" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "black",
+        marginRight: "6px",
+      }}
       onClick={onClick}
     />
   );
@@ -59,7 +64,12 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "black" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "black",
+        marginLeft: "6px",
+      }}
       onClick={onClick}
     />
   );

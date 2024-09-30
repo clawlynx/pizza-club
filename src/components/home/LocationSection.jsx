@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../../assets/bg4.jpeg";
 import { FaLocationDot } from "react-icons/fa6";
+import { handleChatClick, phone } from "../../utils/whatsapp";
 
 export default function LocationSection() {
   return (
@@ -12,9 +13,13 @@ export default function LocationSection() {
         <p className="cursive-font md:text-3xl text-xl text-center">
           to explore world of pizzas
         </p>
-        <button className="p-3 normal-font rounded-full border-2 border-black font-semibold text-xl hover:bg-black hover:text-yellowColor nav-link">
+        <a
+          href={`tel:${phone}`}
+          target="_blank"
+          className="p-3 normal-font rounded-full border-2 border-black font-semibold text-xl hover:bg-black hover:text-yellowColor nav-link"
+        >
           Contact Now
-        </button>
+        </a>
       </div>
       <div
         className="relative w-full md:px-20 px-5 landing-height flex flex-col justify-center bg-cover bg-bottom"

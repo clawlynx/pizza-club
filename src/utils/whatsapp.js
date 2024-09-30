@@ -6,3 +6,5 @@ export const handleChatClick = () => {
 
   window.open(whatsappUrl, "_blank");
 };
+
+export const phone = "+442827662062";

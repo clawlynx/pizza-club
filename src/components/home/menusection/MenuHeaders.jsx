@@ -17,7 +17,7 @@ export default function MenuHeaders({
     <div
       className={`${
         active === name
-          ? `white ${border} shadow-md border ${shadow} -mb-1 ${bg} `
+          ? `white ${border} border ${shadow} -mb-1 ${bg} `
           : "border-b"
       } flex flex-col justify-center gap-4 items-center ${clr} rounded-t-lg py-5 ${hover} nav-link cursor-pointer`}
       onClick={() => setActive(name)}

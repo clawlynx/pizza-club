@@ -39,11 +39,11 @@ export default function Footer() {
               className="md:w-28 md:h-32 w-20 h-24"
             ></img>
           </div>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             {icons.map((x) => (
               <FooterLinks key={x} icon={x} />
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col gap-5 normal-font">
           {footerDetails.map((x) => (

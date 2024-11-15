@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
-import { phone } from "../utils/whatsapp";
+import { handleChatClick, phone } from "../utils/whatsapp";
 
 export default function SmallHeader({ showSmallbar, setShowSmallBar }) {
   return (
@@ -32,13 +32,12 @@ export default function SmallHeader({ showSmallbar, setShowSmallBar }) {
           MENU
         </NavLink>
       </div>
-      <a
-        href={`tel:${phone}`}
-        target="_blank"
+      <button
+        onClick={handleChatClick}
         className="my-5 p-2 rounded-lg text-lg border text-white hover:bg-yellowColor nav-link hover:text-black font-semibold hover:shadow-md hover:shadow-yellowColor"
       >
         Contact Us
-      </a>
+      </button>
     </div>
   );
 }

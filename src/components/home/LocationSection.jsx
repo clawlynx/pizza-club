@@ -13,13 +13,12 @@ export default function LocationSection() {
         <p className="cursive-font md:text-3xl text-xl text-center">
           to explore world of pizzas
         </p>
-        <a
-          href={`tel:${phone}`}
-          target="_blank"
+        <button
+          onClick={handleChatClick}
           className="p-3 normal-font rounded-full border-2 border-black font-semibold text-xl hover:bg-black hover:text-yellowColor nav-link"
         >
           Contact Now
-        </a>
+        </button>
       </div>
       <div
         className="relative w-full md:px-20 px-5 landing-height flex flex-col justify-center bg-cover bg-bottom"

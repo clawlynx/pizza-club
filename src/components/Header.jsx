@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { phone } from "../utils/whatsapp";
+import { handleChatClick, phone } from "../utils/whatsapp";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Header({ showSmallBar, setShowSmallBar }) {
@@ -30,13 +30,12 @@ export default function Header({ showSmallBar, setShowSmallBar }) {
           MENU
         </NavLink>
       </div>
-      <a
-        href={`tel:${phone}`}
-        target="_blank"
+      <button
+        onClick={handleChatClick}
         className="p-2 rounded-lg text-xl hidden md:block border text-white hover:bg-yellowColor nav-link hover:text-black font-semibold hover:shadow-md hover:shadow-yellowColor"
       >
         Contact Us
-      </a>
+      </button>
       <button
         className="md:hidden text-white text-3xl"
         onClick={() => setShowSmallBar(!showSmallBar)}
